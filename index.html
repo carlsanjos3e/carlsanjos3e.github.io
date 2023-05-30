@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Raleway;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -62,9 +62,7 @@
         }
 
         p {
-            padding-top: 0ch;
-            padding-left: 17ch;
-            padding-right: 17ch;
+            padding: clamp(30px, calc(30px + (100 - 30) * ((100vw - 1000px) / (1600 - 1000))), 100px);
         }
 
         section {
