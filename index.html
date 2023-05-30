@@ -22,8 +22,8 @@
         }
 
         header {
-            background-color: mediumpurple;
-            color: #fff;
+            background-color: white;
+            color: black;
             padding: 20px;
             text-align: center;
             font-size: 60px;
@@ -50,10 +50,19 @@
             margin: auto;
         }
 
+        .toright {
+            animation: normal 1.5s eas;
+        }
         .lineUp {
             animation: 1.5s anim-lineUp ease-in-out;
             animation-iteration-count: infinite;
         }
+
+        .lineUp2 {
+            animation: 2s anim-lineUp ease-in-out;
+            animation-iteration-count: 1;
+        }
+
         @keyframes anim-lineUp {
             0% {
             opacity: 0;
@@ -131,7 +140,7 @@
 
 <body>
     <header>
-        <h1>To the woman I love most in the world,</h1>
+        <h1 class="lineUp2">To the woman I love most in the world,</h1>
     </header>
 
     <div class="header2">
@@ -143,11 +152,12 @@
     <section>
         <div class="birthday-message">
             <p>
+                Happy Birthday love!
                 Today marks another trip for you around the sun. 
             </p>
 
             <p>
-                I'll be here to spend your next solar revolution, and 
+                I'll be here to spend with you your next solar relovution, and 
                 every other one after that, until the sun can shine no more.
             </p>
         </div>
