@@ -26,6 +26,12 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            font-size: 60px;
+            margin: auto;
+            padding-top: 7ch;
+            padding-bottom: 10ch;
+            padding-left: 0%;
+            padding-right: 0%;
         }
 
         .header2 {
@@ -42,10 +48,28 @@
         h1 {
             font-size: 60px;
             margin: auto;
-            padding-top: 7ch;
-            padding-bottom: 9ch;
-            padding-left: 0%;
-            padding-right: 0%;
+        }
+
+        .lineUp {
+            animation: 1.5s anim-lineUp ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anim-lineUp {
+            0% {
+            opacity: 0;
+            transform: translateY(80%);
+            }
+            20% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
         }
 
         .h1a {
@@ -111,9 +135,9 @@
     </header>
 
     <div class="header2">
-        <h1 class="h1c">Happy</h1>
-        <h1 class="h1b">Birthday</h1>
-        <h1 class="h1c">Baba!</h1>
+        <h1 class="h1c lineUp">Happy</h1>
+        <h1 class="h1b lineUp">Birthday</h1>
+        <h1 class="h1c lineUp">Baba!</h1>
     </div>
 
     <section>
